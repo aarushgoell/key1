@@ -1,0 +1,73 @@
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+  .btn-outer {
+    position: fixed;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 780px;
+  }
+}
+
+@media (max-width: 767px) {
+  .touchpara {
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 767px) {
+  .touch-inpbut {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .touch-main {
+    border-bottom: 1px solid #c2c2c2;
+  }
+}
+
+@media (max-width: 767px) {
+  .bld {
+    font-weight: 700;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .itms {
+    /* font-weight: bolder; */
+    text-decoration: underline;
+    font-size: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #C2C2C2;
+  }
+}
+
+
+@media (min-width: 767px) {
+  .itms {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .foott{
+    font-size: 7px;
+}
+}
+
+
+@media (min-width: 767px) {
+  .foott{
+    font-size: 9px;
+}
+}
+

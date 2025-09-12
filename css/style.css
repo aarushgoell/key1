@@ -1,0 +1,56 @@
+
+*{
+  font-family: "Montserrat", sans-serif;
+}
+
+.touchimage{
+    width: 350px;
+    height: 350px;
+}
+
+.touchtext{
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.touchpara,.touch-inp{
+    color: #929292;
+}
+
+.touchpara{
+    font-weight: 400;
+}
+
+
+.touch-inp{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #C2C2C2;
+}
+.touch-but{
+    width: 210px;
+    padding: 8px 25px;
+    background-color: #151515;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 20px;    
+}
+
+
+
+.dimup{
+    border: 1px solid #C2C2C2;
+}
+
+.bld2{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #C2C2C2;
+}
+
+.itms{
+    margin-bottom: 12px;
+}
+
+.bld{
+    font-weight: 500;
+}
+
