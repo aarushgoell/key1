@@ -11,7 +11,25 @@
   .container-md,
   .container-sm,
   .container-xl {
-    max-width: 780px;
+    max-width: 980px;
+  }
+}
+
+@media (min-width: 578px) and (max-width: 991px) {
+  .touch-inpbut,.touch-inp{
+   font-size: 14px;
+   margin-top: 14px;
+  }
+}
+@media (min-width: 578px) and (max-width: 991px) {
+  .touchpara{
+   font-size: 14px;
+  }
+}
+
+@media (min-width:992px) {
+  .touch-inp{
+   margin-top: 50px;
   }
 }
 
@@ -71,3 +89,20 @@
 }
 }
 
+
+@media(min-width : 575px){
+  .collecpara{
+    max-width: 540px;
+  }
+}
+
+@media(max-width : 575px){
+  .collecpara{
+    font-weight: 700;
+  }
+}
+/* @media(min-width : 768px){
+  .touch-left{
+    padding-left: 140px;
+  }
+} */
