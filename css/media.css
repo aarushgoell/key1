@@ -5,7 +5,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 1600px) {
   .container,
   .container-lg,
   .container-md,
