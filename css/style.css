@@ -61,3 +61,23 @@
     font-weight: 800;
     font-size: 23px;
 }
+.tit{
+    font-size: 18px;
+}
+
+.nav-row{
+    font-size: 13px;
+}
+
+.dropdown-item{
+    font-weight: 600;
+}
+
+.menufle{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    margin-top: 12px;
+}

@@ -101,8 +101,19 @@
     font-weight: 700;
   }
 }
-/* @media(min-width : 768px){
-  .touch-left{
-    padding-left: 140px;
+
+
+@media (max-width: 768px) {
+  .dropdown-fullscreen {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;           
+    overflow-y: auto;        
+    border-radius: 0px;
+    background-color: #fff;  
+    padding: 1rem;
+    z-index: 1;            
   }
-} */
+}
