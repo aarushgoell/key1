@@ -238,7 +238,34 @@
     <section class="ring-sec my-5">
       <div class="container-fluid">
         <div class="container">
-          <div class="row align-items-center px-3">
+        
+          <div class="owl-carousel circular-slider">
+  <div class="item">
+    <img src="./images/Rings/Leftring.webp" alt="ring">
+    <div class="content">
+      <h3>Vintage & Antique</h3>
+      <p>$4500</p>
+      <small>20% off • Use code LOVE20</small>
+    </div>
+  </div>
+  <div class="item">
+    <img src="./images/Rings/MiddleRing.webp" alt="ring">
+    <div class="content">
+      <h3>Modern Halo</h3>
+      <p>$3900</p>
+      <small>15% off • Use code LOVE15</small>
+    </div>
+  </div>
+  <div class="item">
+    <img src="./images/Rings/Rightrind.webp" alt="ring">
+    <div class="content">
+      <h3>Classic Solitaire</h3>
+      <p>$4200</p>
+      <small>10% off • Use code LOVE10</small>
+    </div>
+  </div>
+</div>
+        <div class="row align-items-center px-3">
               <div class="col-md-3 d-flex gap-2 d-md-flex d-none">
                 <div style="width: 30px; height: 30px;"><img src="./images/social/facebook.webp" alt="fbimg" class="img-fluid" ></div>
                 <div style="width: 30px; height: 30px;"><img src="./images/social/twitter.webp" alt="twtimg" class="img-fluid"></div>
@@ -254,6 +281,7 @@
                 <div style="width: 30px; height: 30px;"><img src="./images/navbar/down.webp" alt="instimg" class="img-fluid"></div>
               </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -585,11 +613,33 @@
     ></script>
 
     <script>
+
+      
       $(document).ready(function () {
       
-        var owl = $(".owl-carousel");
+      const owl = $('.circular-slider');
 
-        owl.owlCarousel({
+owl.owlCarousel({
+  items: 3,
+  loop: true,
+  center: true,
+  margin: 40,
+  autoplay: false,
+  mouseDrag: false,
+  touchDrag: false,
+  pullDrag: false
+});
+
+// When user clicks on any item, go to that slide
+owl.on('click', '.owl-item', function () {
+  const index = $(this).index();
+  owl.trigger('to.owl.carousel', [index, 300]);
+});
+
+
+        var owl2 = $(".owl-carousel");
+
+        owl2.owlCarousel({
           loop: true,
           margin: 10,
           nav: false,
@@ -600,7 +650,7 @@
             1000: { items: 7 },
           },
         });
-        var totalItems = owl.find(".item").length;
+        var totalItems = owl2.find(".item").length;
         for (let i = 0; i < totalItems; i++) {
           $(".custom-dots").append(
             '<button class="custom-dot" data-slide="' + i + '">•</button>'
@@ -608,7 +658,7 @@
         }
         $(".custom-dots").on("click", ".custom-dot", function () {
           var index = $(this).data("slide");
-          owl.trigger("to.owl.carousel", [index, 300]);
+          owl2.trigger("to.owl.carousel", [index, 300]);
         });
         owl.on("changed.owl.carousel", function (event) {
           var count = event.item.count;

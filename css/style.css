@@ -113,3 +113,34 @@ li{
 }
 
 
+
+.circular-slider .item {
+  text-align: center;
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.circular-slider .item img {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.circular-slider .item .content {
+  display: none;
+  margin-top: 1rem;
+}
+
+.circular-slider .owl-item.center .item {
+  transform: translateY(-30px) scale(1.2);
+  opacity: 1;
+}
+
+.circular-slider .owl-item.center .item .content {
+  display: block;
+}
+
+.circular-slider .owl-item:not(.center) .item img {
+  width: 150px;
+}
