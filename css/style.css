@@ -123,13 +123,15 @@ li{
 
 .circular-slider .item img {
   width: 200px;
-  margin: 0 auto;
+  height: 250px;
+  margin-top:40px;
   display: block;
 }
 
 .circular-slider .item .content {
   display: none;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .circular-slider .owl-item.center .item {
@@ -139,8 +141,13 @@ li{
 
 .circular-slider .owl-item.center .item .content {
   display: block;
+  
 }
 
 .circular-slider .owl-item:not(.center) .item img {
-  width: 150px;
+  width: 350px;
+}
+
+.midring{
+  transform: rotate(114deg);
 }
