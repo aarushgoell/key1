@@ -83,8 +83,6 @@ li{
 }
 
 
-
-
 .custom-dots {
   display: flex;
   justify-content: center;
@@ -105,11 +103,11 @@ li{
 
 .custom-dots button:hover {
   transform: scale(1.2);
-  background-color: #999;         /* slightly darker on hover */
+  background-color: #999;         
 }
 
 .custom-dots button.active {
-  background-color: #333;         /* active color */
+  background-color: #333;        
 }
 
 
